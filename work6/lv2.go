@@ -14,7 +14,7 @@ type UserInfo struct {
 }
 
 func main() {
-	dsn := "root:Zjx666946.@tcp(127.0.0.1:3306)/mysql_demo?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:password@tcp(127.0.0.1:3306)/mysql_demo?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		fmt.Println("open failed,err:", err)
